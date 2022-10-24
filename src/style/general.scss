@@ -1,0 +1,19 @@
+// bootstrap import
+@import '~bootstrap/scss/bootstrap';
+
+// fonsource import
+@import '~@fontsource/cormorant-garamond/300.css';
+@import '~@fontsource/cormorant-garamond/400.css';
+@import '~@fontsource/cormorant-garamond/500.css';
+@import '~@fontsource/cormorant-garamond/600.css';
+@import '~@fontsource/cormorant-garamond/700.css';
+
+// import variables file
+@import './variables.scss';
+
+
+
+
+body {
+    font-family: "Cormorant Garamond", serif;
+}
