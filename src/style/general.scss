@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+// .col {
+//     margin: 0;
+//     padding: 0;
+// }
 
 body {
     font-family: "Cormorant Garamond", serif;
@@ -43,4 +47,9 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
 }
