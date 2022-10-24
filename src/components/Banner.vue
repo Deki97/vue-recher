@@ -47,7 +47,6 @@ export default {
 <style lang="scss" scoped>
 .banner {
     height: calc(100vh - 130px);
-    background-color: pink;
 
     .image-banner {
         width: 100%;

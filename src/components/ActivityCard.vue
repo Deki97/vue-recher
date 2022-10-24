@@ -29,6 +29,7 @@ export default {
 .single-activity {
     height: 380px;
     border-radius: 10px;
+    margin-bottom: 100px;
 
     .activity-image {
         width: 100%;
@@ -64,6 +65,15 @@ export default {
                 font-weight: 600;
             }
         }
+    }
+}
+
+
+
+// RESPONSIVE
+@media (min-width: 1200px) {
+    .single-activity {
+        margin-bottom: 0;
     }
 }
 

@@ -3,7 +3,7 @@
         <div class="image">
             <img :src="image" :alt="title">
         </div>
-        <div class="text d-flex flex-column align-items-center justify-content-between">
+        <div class="text d-flex flex-column align-items-center justify-content-center">
             <h2>{{ title }}</h2>
 
             <div class="btn-more">
@@ -34,18 +34,18 @@ export default {
     padding: 40px 0 120px 0;
 
     & > div {
-        width: 50%;
+        width: 100%;
     }
 
     .text {
         background-color: $page_secondary_color;
         color: white;
-        padding: 120px 20px;
 
         h2 {
             text-transform: uppercase;
-            font-size: 3.6rem;
+            font-size: 1.6rem;
             font-weight: 700;
+            margin-bottom: 60px;
         }
 
         .btn-more {
@@ -57,6 +57,31 @@ export default {
                 border: 1px solid white;
                 padding: 10px 20px;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE
+@media (min-width: 992px) {
+    .company-history {
+        & > div {
+            width: 50%;
+        }
+        .text {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .company-history {
+        .text {
+            h2 {
+                font-size: 3.6rem;
             }
         }
     }
