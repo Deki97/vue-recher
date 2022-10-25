@@ -2,7 +2,7 @@
     <footer class="text-center">
         <div class="container">
             <div class="footer-top">
-                <div class="row">
+                <div class="row row-cols-1 row-cols-lg-3">
 
                     <div class="col col1">
                         <div class="location">
@@ -39,7 +39,7 @@
             </div>
 
             <div class="footer-bottom">
-                <div class="row d-flex align-items-center">
+                <div class="row row-cols-1 row-cols-lg-3 d-flex align-items-center">
                     
                     <div class="col col1">
                         <div class="logo">
@@ -147,7 +147,7 @@ footer {
 
         .logo {
             img {
-                
+                width: 200px;
             }
         }
 
@@ -166,6 +166,33 @@ footer {
             }
         }
     }
+}
+
+
+// RESPONSIVE
+@media (max-width: 992px) {
+    footer {
+        .footer-top {
+            .col {
+                &.col2 {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+        .col {
+            margin-bottom: 40px;
+        }
+        .footer-bottom {
+            margin-top: 40px;
+            .logo {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    
 }
 
 

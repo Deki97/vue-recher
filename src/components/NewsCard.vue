@@ -42,11 +42,16 @@ export default {
 @import '../style/general.scss';
 @import '../style/variables.scss';
 
+
+
+/* -------------------------------------------- 
+VERSIONE DESKTOP
+-------------------------------------------- */
 .col {
     padding: 0 20px;
 
     .single-news {
-        min-height: 500px;
+        
         position: relative;
         .news-top {
             height: 200px;
@@ -76,6 +81,7 @@ export default {
                 p {
                     font-size: 1.2rem;
                     margin: 20px 0;
+                    line-height: 1.5rem;
                 }
             }
 
@@ -102,5 +108,135 @@ export default {
         }
     }
 }
+/* -------------------------------------------- 
+VERSIONE DESKTOP 
+-------------------------------------------- */
 
+
+
+
+
+  /* -------------------------------------------- 
+VERSIONE LARGE DEVICES (>768px && < 992px)
+ -------------------------------------------- */
+ @media (max-width: 992px) {
+    .col {
+        .single-news {
+            .news-bottom {
+                padding: 10px 0;
+
+                .details {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+  /* -------------------------------------------- 
+VERSIONE LARGE DEVICES (>768px && < 992px)
+ -------------------------------------------- */
+
+
+
+ @media (min-width: 769px) {
+    .col {
+        .single-news {
+            min-height: 550px;
+            .news-bottom {
+                
+
+                .text {
+                    p {
+                        
+                    }
+                }
+
+                .details {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 993px) {
+    .col {
+        .single-news {
+            min-height: 550px;
+            .news-bottom {
+                padding: 20px;
+
+                .details {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+  /* -------------------------------------------- 
+VERSIONE MEDIUM DEVICES (>576px && < 768px)
+ -------------------------------------------- */
+@media (max-width: 768px) {
+    .col {
+        .single-news {
+            margin-bottom: 50px;
+            .news-bottom {
+                padding: 10px 0;
+
+                .text {
+                    p {
+                        margin: 10px 0 40px 0;
+                    }
+                }
+
+                .details {
+                    position: unset;
+                }
+            }
+        }
+    }
+}
+ /* -------------------------------------------- 
+FINE VERSIONE MEDIUM DEVICES (>576px && < 768px)
+ -------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------- 
+VERSIONE SMALL DEVICES (< 576px)
+ -------------------------------------------- */
+@media (max-width: 576px) {
+    .col {
+        .single-news {
+            .news-bottom {
+                padding: 10px 0;
+                .text {
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* -------------------------------------------- 
+FINE VERSIONE SMALL DEVICES (< 576px)
+ -------------------------------------------- */
 </style>

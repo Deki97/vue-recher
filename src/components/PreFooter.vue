@@ -51,4 +51,29 @@ export default {
     }
 }
 
+// RESPONSIVE
+@media (max-width: 576px) {
+    .pre-footer {
+        background-color: $page_tertiary_color;
+        padding: 50px 0;
+
+        &-content {
+            .title {
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .text {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
 </style>

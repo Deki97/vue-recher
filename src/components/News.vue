@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 .news-container {
-    padding-bottom: 120px;
+    margin: 100px 0;
     
     h2 {
         text-align: center;

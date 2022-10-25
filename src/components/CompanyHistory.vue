@@ -31,10 +31,9 @@ export default {
 @import '../style/variables.scss';
 
 .company-history {
-    padding: 40px 0 120px 0;
 
     & > div {
-        width: 100%;
+        width: 50%;
     }
 
     .text {
@@ -43,7 +42,7 @@ export default {
 
         h2 {
             text-transform: uppercase;
-            font-size: 1.6rem;
+            font-size: 2.6rem;
             font-weight: 700;
             margin-bottom: 60px;
         }
@@ -64,27 +63,60 @@ export default {
 
 
 // RESPONSIVE
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
     .company-history {
-        & > div {
-            width: 50%;
-        }
+    
         .text {
             h2 {
-                font-size: 2.6rem;
+                font-size: 1.8rem;
             }
+ 
         }
     }
 }
 
-@media (min-width: 1400px) {
+
+@media (max-width: 768px) {
     .company-history {
+        & > div {
+            width: 100%;
+        }
         .text {
+            padding: 30px 0;
+
             h2 {
-                font-size: 3.6rem;
+                font-size: 1.6rem;
             }
+
+            .btn-more {
+            a {
+                font-size: 1.1rem;
+                padding: 8px 15px;
+            }
+        }
         }
     }
 }
+
+@media (max-width: 576px) {
+    .company-history {
+        .text {
+            padding: 30px 0;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .btn-more {
+            a {
+                font-size: .9rem;
+                padding: 8px 15px;
+            }
+        }
+        }
+    }
+}
+
+
 
 </style>

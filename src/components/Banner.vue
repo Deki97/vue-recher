@@ -46,7 +46,8 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 85px);
+    margin-top: 85px;
 
     .image-banner {
         width: 100%;
@@ -75,6 +76,7 @@ export default {
             transform: translate(-50%, -50%);
             color: white;
             text-align: center;
+            width: 90%;
 
             .banner-title {
                 h2 {
@@ -87,6 +89,66 @@ export default {
             .banner-subtitle {
                 h4 {
                     font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE
+@media (min-width: 768px) {
+    .banner {
+        height: calc(100vh - 100px);
+        margin-top: 100px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .banner {
+        height: calc(100vh - 115px);
+        margin-top: 115px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .banner {
+        .image-banner {
+            .text-content {
+                .banner-title {
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+
+                .banner-subtitle {
+                    h4 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        .image-banner {
+            .text-content {
+                .banner-title {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+
+                .banner-subtitle {
+                    h4 {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
