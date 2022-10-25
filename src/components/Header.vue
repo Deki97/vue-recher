@@ -20,13 +20,13 @@
                 </div>
 
                 <div class="header-right-mobile d-block d-lg-none">
-                    <div class="burger-toggle" @click="sayHello">
+                    <div @click="isHidden = !isHidden" class="burger-toggle">
                         <img src="../assets/img/menu.png" alt="Burger Toggle">
                     </div>
 
-                    <div class="menu d-none">
+                    <div v-if="!isHidden" class="menu">
                         <nav>
-                            <ul class="d-flex">
+                            <ul class="d-flex flex-column">
                                 <li v-for="(menu, index) in menus" :key="index">
                                     <a :href="menu.menuUrl">{{ menu.menuName }}</a>
                                 </li>
@@ -44,6 +44,7 @@ export default {
     name: 'Header',
     data: function() {
         return {
+            isHidden: false,
             menus: [
                 {
                     menuName: 'Homepage',
@@ -127,6 +128,32 @@ header {
                 width: 35px;
             }
         }
+
+        .menu {
+            position: absolute;
+            top: 115px;
+            right: 40px;
+            background-color: white;
+            width: 300px;
+            border-radius: 5px;
+            text-align: center;
+
+            nav {
+                ul {
+                    li {
+                        font-size: 1.2rem;
+
+                        a {
+                            color: black;
+                            margin: 10px 0;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -186,6 +213,18 @@ header {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    header {
+        .header-right-mobile {
+            .menu {
+                right: 20px;
+                width: 80%;
             }
         }
     }
