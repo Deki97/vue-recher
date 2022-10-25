@@ -48,27 +48,27 @@ export default {
             menus: [
                 {
                     menuName: 'Homepage',
-                    menuUrl: '#'
+                    menuUrl: '/'
                 },
                 {
                     menuName: 'Lo Studio',
-                    menuUrl: '#'
+                    menuUrl: 'lo-studio'
                 },
                 {
                     menuName: 'Le attività',
-                    menuUrl: '#'
+                    menuUrl: '/le-attività'
                 },
                 {
                     menuName: 'Dove siamo',
-                    menuUrl: '#'
+                    menuUrl: '/dove-siamo'
                 },
                 {
                     menuName: 'Contatti',
-                    menuUrl: '#'
+                    menuUrl: '/contatti'
                 },
                 {
                     menuName: 'News',
-                    menuUrl: '#'
+                    menuUrl: '/news'
                 },
             ],
 
