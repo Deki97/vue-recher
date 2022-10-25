@@ -44,7 +44,7 @@ export default {
     name: 'Header',
     data: function() {
         return {
-            isHidden: false,
+            isHidden: true,
             menus: [
                 {
                     menuName: 'Homepage',
